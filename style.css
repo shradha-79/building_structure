@@ -1,0 +1,136 @@
+*{
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.imge{
+    background: url("images/BUILDING_IMAGE.jpg") no-repeat center ;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+.fno1, .fno2, .fno3, .fno4, .fno5{
+    cursor: pointer;
+    font-weight: bold;
+    padding: 7px;
+    border-radius: 5px;
+    display: block;
+    /* margin: 5px; */
+}
+button{
+  /* margin: 5px; */
+}
+
+.nav{
+    width: 100%;
+    padding: 14px 40px;
+    background: darkgreen;
+    height: 12vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.nav p{
+    padding-left: 10px;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 30px;
+}
+.nav li{
+    padding: 0 !important;
+    margin: 0;
+    list-style: none;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 20px;
+}
+.nav ul li.active a{
+    background: #8ed58e;
+    border-radius: 5px;
+    color: black;
+   
+}
+.nav ul li a{
+    color: seashell;
+    text-decoration: none;
+    padding: 4px;
+}
+.floor{
+    background-color: #8ed58e;
+    height: 85vh;
+    width: 100%;
+    text-align: center;    
+}
+.flora{
+    background: url("images/Floor_plan.jpg");
+    background-size: cover;    
+    background-repeat: no-repeat;
+    background-position: center center;
+    /* background-attachment: fixed; */
+    background-size: auto 100%;
+    /* height: 100%; */
+    height: 30em;
+    /* overflow: scroll; */
+    /* width: 80%; */
+}
+.florb{
+  background: url("images/ISOMETRIC_VIEW.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  /* background-attachment: fixed; */
+  background-size: auto 100%;
+  /* height: 100%; */
+  height: 30em;
+  /* width: 80%; */
+}
+
+.container{
+  position: absolute;
+  left: 50%;
+}
+.container{
+  top: -150%;
+  max-width: 380px;
+  width: 100%;
+  opacity: 0;
+  pointer-events: none;
+  box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
+  transform: translate(-50%, -50%) scale(1.2);
+  transition: top 0s 0.2s ease-in-out,
+              opacity 0.2s 0s ease-in-out,
+              transform 0.2s 0s ease-in-out;
+}
+.container.show{
+  top: 50%;
+  opacity: 1;
+  pointer-events: auto;
+  transform:translate(-50%, -50%) scale(1);
+  transition: top 0s 0s ease-in-out,
+              opacity 0.2s 0s ease-in-out,
+              transform 0.2s 0s ease-in-out;
+
+}
+.container :is(.nav){
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav .close{
+  display: flex;
+  align-items: center;
+  border-radius: 50%;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+}
+.nav .close{
+  color: #878787;
+  font-size: 17px;
+  background: #f2f3fb;
+  height: 33px;
+  width: 33px;
+  cursor: pointer;
+}
+.nav .close:hover{
+  background: #ebedf9;
+}
