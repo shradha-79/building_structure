@@ -13,17 +13,17 @@ li.forEach(el => {
 	}); 			
 });
 
-const fa = document.querySelector('.fa');
-const fb = document.querySelector('.fb');
+const fa = document.querySelector('.fla');
+const fb = document.querySelector('.flb');
 const flor = document.querySelector('.flor');
 
 fa.addEventListener('click', () => {
-    console.log("aa");
+    // console.log("aa");
     $('.flor').removeClass('florb');
     $('.floor div').addClass('flora');
 })
 fb.addEventListener('click', () => {
-    console.log("bb");
+    // console.log("bb");
     $('.flor').removeClass('flora');
     $('.floor div').addClass('florb');
 })
@@ -33,10 +33,11 @@ const viewBtn1 = document.querySelector(".fno1"),
       viewBtn3 = document.querySelector(".fno3"),
       viewBtn4 = document.querySelector(".fno4"),
       viewBtn5 = document.querySelector(".fno5"),
-      container = document.querySelector(".container"),
+      container = document.querySelector(".container-fluid"),
       close = container.querySelector(".close");
 
     viewBtn1.onclick = ()=>{
+      console.log("btn1");
       container.classList.toggle("show");
       $(".nav span").html("1");
     }
