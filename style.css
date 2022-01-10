@@ -18,7 +18,7 @@
     /* margin: 5px; */
 }
 button{
-  /* margin: 5px; */
+  margin-left: 5px;
 }
 
 .nav{
@@ -72,7 +72,7 @@ button{
     /* background-attachment: fixed; */
     background-size: auto 100%;
     /* height: 100%; */
-    height: 30em;
+    height: 31em;
     /* overflow: scroll; */
     /* width: 80%; */
 }
@@ -84,7 +84,7 @@ button{
   /* background-attachment: fixed; */
   background-size: auto 100%;
   /* height: 100%; */
-  height: 30em;
+  height: 31em;
   /* width: 80%; */
 }
 
@@ -136,4 +136,57 @@ button{
 }
 .nav .close:hover{
   background: #ebedf9;
+}
+
+
+
+@media (max-width: 800px ){
+    .flora{
+      height: 25em;
+    }
+    .florb{
+      height: 25em;
+    }
+}
+@media (max-width: 645px ){
+  .flora{
+    height: 20em;
+  }
+  .florb{
+    height: 20em;
+  }
+  .nav li{
+    font-size: 15px;
+  }
+  .nav p{
+    font-size: 20px;
+  }
+}
+@media (max-width: 450px ){
+    .flora{
+      height: 15em;
+    }
+    .florb{
+      height: 15em;
+    }
+    .nav li{
+      font-size: 11px;
+    }
+    .nav p{
+      font-size: 15px;
+    }
+    .nav .close{
+      font-size: 14px;
+      height: 26px;
+      width: 26px;
+      cursor: pointer;
+    }
+}
+@media (max-width: 360px ){
+    .flora{
+      height: 12em;
+    }
+    .florb{
+      height: 12em;
+    }
 }
